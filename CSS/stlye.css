@@ -4,7 +4,11 @@
   align-items: center;
 }
 
-#the-grid {
+/* #the-grid{
+  display: none;
+} */
+
+.grid {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -20,5 +24,42 @@
   height: 125px;
   width: 125px;
   margin: 0 6px 0 6px;
-  
+  font-size: 30px;
 }
+
+.green {
+  background-color: #2fd615;
+}
+.blue {
+  background-color: #0066ed;
+}
+.yellow {
+  background-color: #ffb200;
+}
+.red {
+  background-color: #ff1414;
+}
+.orange {
+  background-color: #e27a1f;
+}
+.pink {
+  background-color: #f6aeaa;
+}
+.brown {
+  background-color: #591d0b;
+}
+.purple {
+  background-color: #df42f4;
+}
+.white {
+  color: white;
+  background-color: white;
+}
+
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
