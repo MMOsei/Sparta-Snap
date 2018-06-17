@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // $('.white').toggle(.box);
 
   var box = document.getElementsByClassName('box');
   var boxes = [...box];
@@ -11,14 +12,24 @@ $(document).ready(function(){
   //   $('#play').toggle();
   // });
 
+  //-------------------------------------
 
   shuffle();
 
   $(this).click(function(event){
+    console.log(this);
     gamePlayClick();
+    // $('.white').toggle();
+    cover();
   });
 
 //-------------------------------------
+
+function cover() {
+  var element = document.getElement(this);
+  console.log(element);
+  element.classList.toggle("white");
+}
 
   //This is the shuffle function
   function shuffle() {
@@ -81,6 +92,11 @@ $(document).ready(function(){
       console.log('You lose!!');
     } // Lose condition if statement
   } // Function close
+
+  function cover() {
+
+  }
+
 
 
 });
