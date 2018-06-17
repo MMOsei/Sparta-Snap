@@ -54,8 +54,6 @@ function cover() {
     }
   }
 
-
-
   // Function that controls the game play clicks
 
   var count = 0;
@@ -92,11 +90,5 @@ function cover() {
       console.log('You lose!!');
     } // Lose condition if statement
   } // Function close
-
-  function cover() {
-
-  }
-
-
 
 });
