@@ -27,6 +27,17 @@
   font-size: 30px;
 }
 
+.cover {
+  position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 1;
+   height: 125px;
+   width: 125px;
+   margin: 0 6px 0 6px;
+   background-color: black;
+}
+
 .green {
   background-color: #2fd615;
 }

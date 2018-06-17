@@ -11,7 +11,6 @@ $(document).ready(function(){
   //   $('#play').toggle();
   // });
 
-  //-------------------------------------
 
   shuffle();
 
@@ -34,15 +33,20 @@ $(document).ready(function(){
       temp = myArray[currentPass];
       myArray[currentPass] = myArray[index];
       myArray[index] = temp;
-    } // while loop closing bracket
-    for (var i = 0; i < myArray.length; i++) {
-        boxes = $('<div class="box">' + myArray + '</div>');
-        $('#the-grid').append(myArray);
-        // $('.box').append.addClass("white");
-      } // for loop closing bracket
-  } // shuffle fintion close
+    }
+
+
+  for (var i = 0; i < myArray.length; i++) {
+      boxes = $('<div class="box">' + myArray + '</div>');
+      $('#the-grid').append(myArray);
+      // $('.box').append.addClass("white");
+    }
+  }
+
+
 
   // Function that controls the game play clicks
+
   var count = 0;
   function gamePlayClick() {
 
@@ -57,7 +61,7 @@ $(document).ready(function(){
       console.log(click2);
       console.log(count);
 
-      // winning condition
+      // if the 2 clicks match then leave it uncovered
       if (click1 === click2) {
         win++;
         console.log('I\'ts a match!');
@@ -73,10 +77,9 @@ $(document).ready(function(){
         } // Second level if statement close
       } //First level if statement close
     } // else statement close
-    //losing condition
     if (count == 20) {
       console.log('You lose!!');
-    } // Lose condition if statement close
+    } // Lose condition if statement
   } // Function close
 
 
